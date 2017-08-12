@@ -549,7 +549,6 @@ var POCMetaData = [
 { Image: 'http://culturalhall.com/content/images/thumbs/0067314_ye-are-my-disciples.jpeg', Name: 'Ye Are My Disciples', Id: '52897', Artist: 'Scott Sumner', Distributor: 'Foundation Arts'},
 { Image: 'http://culturalhall.com/content/images/thumbs/0002438_young-jesus-with-lamb-sketch.jpeg', Name: 'Young Jesus With Lamb Sketch', Id: '12070', Artist: 'Liz Lemon Swindle', Distributor: 'Foundation Arts'},
 { Image: 'http://culturalhall.com/content/images/thumbs/0067358_young-women.jpeg', Name: 'Young Women', Id: '52905', Artist: 'Scott Sumner', Distributor: 'Foundation Arts'},
-{ Image: 'http://culturalhall.com/content/images/thumbs/0067358_young-women.jpeg', Name: 'Young Women', Id: '52905', Artist: 'Scott Sumner', Distributor: 'Foundation Arts'},
 ];
 
 this.getPOCMetaData = function(){
