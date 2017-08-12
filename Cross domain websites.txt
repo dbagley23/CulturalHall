@@ -1,0 +1,4 @@
+Cross origin websites
+use powershell in the directory you want to run.
+type "http-server"
+goto localhost:8080

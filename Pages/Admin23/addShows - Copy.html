@@ -1,0 +1,28 @@
+<div>
+    <div ng-controller="showCtrl">
+        <input type="text" ng-model="costcoStore" placeholder="City"/>
+        <input type="text" ng-model="startDate" placeholder="Start Date"/>
+        <input type="text" ng-model="endDate" placeholder="End Date"/>
+        <button ng-click="postShowData()">Submit Show</button>
+    </div>
+    {{costcoShows}}
+    <div class="Shows">
+        <ul>
+            <ul>
+                <h1>Waiting</h1>
+                <li class="listItem" ng-repeat="costcoShow in costcoShows | filter: {store: 'Santa Maria, California'}">
+                    <div  class="shows">{{costcoShow.store}}</div>
+                    <div class="theButton"><button ng-click="changeStatus(show)">Update</button></div>
+                </li>
+            </ul>
+            <h1>Still Waiting</h1>
+            <li class="showView" ng-repeat="costcoShow in costcoShows">
+                <div class="TempleSpecs">
+                    <div class="shows">{{costcoShow.store}}</div>
+                    <div class="shows">{{costcoShow.startDate}}</div>
+                    <div class="shows">{{costcoShow.endDate}}</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

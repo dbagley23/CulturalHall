@@ -1,0 +1,30 @@
+<div ng-controller="showCtrl">
+    <div id="Wrapper">
+        <div>
+            <div class="menu-bar">
+                <fieldset class = "SrchBox">
+                    <label>Search:</label>
+                    <input type="text" size="15" ng-model="SearchTerm" id="searchBox" placeholder="Temple Name"  onfocus="javascript:this.style.background='#ffffff';" onblur="javascript:this.style.background='#dddddd';" />
+                    <!--<input type="button" ng-click="getFrameData()" title="Click Go to Submit" id="Go" class="submit" value="Go" />-->
+                </fieldset>
+            </div>
+            <div class="main-body">
+                <h1 class="UC">Add New Shows</h1>
+                <form class="addNewShows">
+                    <input class="textbox" type="text" ng-model="costcoStore" placeholder="City"/>
+                    <input class="textbox" type="text" ng-model="startDate" placeholder="Start Date"/>
+                    <input class="textbox" type="text" ng-model="endDate" placeholder="End Date"/>
+                    <button class="textbox" ng-click="postShowData()">Submit Show</button>
+                </form>
+                <h1 class="UC">Upcoming Shows</h1>
+                <ul>
+                    <li class="showView" ng-repeat="show in shows | filter:SearchTerm">
+                        <div class="showInfo">
+                            <div class="cityName">{{show.store}}</div><div class="showDates">{{show.startDate  | date:'EEEE, MMMM d, yyyy'}}  -  {{show.endDate  | date:'EEEE, MMMM d, yyyy'}}        <button class="textbox" ng-click="deleteShow(show)">Delete</button></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

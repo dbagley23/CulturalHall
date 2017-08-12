@@ -1,0 +1,920 @@
+﻿.culturalHallBanner{
+	width: 100%;
+	height: 5%;
+	margin: 0 auto;
+	text-align: center;
+	background-color: transparent;
+	font-size: 200%;
+	font-family: 'PT Serif', serif;
+}
+	
+
+.main-container {
+	width: 90%;
+	margin: 0px auto;
+	position: relative;
+	height: 100%;
+}
+
+.menu {
+	width: 100%;
+}
+
+.mainMenuList {
+	float: right;
+	width: 45%;
+
+}
+
+.mainMenuItem {
+	text-align: center;;
+	width: 20%;
+}
+
+.UC{
+	margin-left: 275px;;
+}
+
+.showView {
+	display: block;
+	list-style-image: none;
+	width: 100%;
+}
+
+.cityName{
+	display: inline-block;
+	margin-right: 30px;
+	width: 20%;
+}
+
+.showDates{
+	display: inline-block;
+	margin-right: 30px;
+	width: 70%;
+}
+
+.addNewShows{
+	background-color: rgba(54, 43, 32, 0.93);
+	height: 50px;
+	width: 100%
+}
+
+.showInfo {
+	font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+	font-size: large;
+	padding-top: 10px;
+	child-align: left;
+}
+
+ul {
+	list-style: none;
+	width: 100%;
+	padding-left: 0px;
+}
+
+li {
+	display: inline-block;
+	background-color: transparent;
+	width: 100%;
+}
+
+#templeImage{
+	width: 100%;
+}
+
+.templeName{
+	text-align: center;;
+	font-size: 0.7rem;
+}
+
+html{
+	width: 100%;
+	height: 100%;
+	background-image: url(assets/repeat.jpg);
+	background-repeat: repeat;
+	background-color: rgba(224, 219, 201, 0.93);
+}
+
+.main {
+	width: 90%;
+	max-width: 1200px;
+	height: 100%;
+	margin:0 auto;
+}
+
+.header{
+	width: 100%;
+	height: 50px;
+	background-color:#0F0F10;
+	min-width: 750px;
+}
+
+.logo{
+	display: inline-block;
+	position: relative;
+}
+
+a{
+	text-decoration: none;
+	color:#FFFFFF;
+}
+
+.header-link{
+	display: inline-block;
+	margin-left: 10%;
+	color:#FFFFFF;
+}
+
+.menu-bar{
+	width: 100%;
+	height: 50px;
+	background-color: rgba(40, 28, 15, 0.93)
+}
+
+.menu-link{
+	margin-left: 20px;
+	text-align:center;
+	display: inline-block;
+}
+
+.main-body{
+	display: block;
+	align-items: flex-start;
+	width: 100%;
+	background-color: white;
+	min-height: 600px;
+	overflow: hidden;
+}
+
+.disclaimer {
+	display: inline-block;
+	width: 45%;
+	font-size: 80%;
+}
+
+#mimage{
+	width: 100%;
+}
+
+.smallimage{
+	display: inline-block;
+	width: 19%;
+}
+
+
+fieldset, form
+{
+	border: none;
+	margin: 0;
+	padding-left: 30px;
+	display: inline-block;
+}
+.searchBox
+{
+	height: 1.5em;
+	width: 10em;
+	border: 1px solid #A7A6AA;
+	margin-top: 0.7em;
+	background-color: white;
+}
+.searchLabel{
+	color: whitesmoke;
+}
+.SearchField{
+	background-color: white;
+	width: 30px;
+	height: 20px;
+	display: inline-block;
+}
+
+.shows{
+	width: 300px;
+	height: 300px;
+	background-color: blue;
+}
+
+.textbox{
+	font-size: x-large;
+	margin-top: 8px;
+}
+
+/*use the following to decide how wide the temple images Div will be*/
+#templeList{
+	display: inline-block;
+	width: 9%;
+	max-height: 80vh;
+	overflow: auto;
+}
+
+/*Use the following to decide how many images in the div*/
+.templeView{
+	display: inline-block;
+	width: 100%;
+}
+
+.roomImage{
+	width: 100%;
+	position: static;
+	left: 0px;
+	right: 0px;
+}
+
+@media (min-width: 1650px){
+	.Room{
+		display: inline-block;
+		width: 849px;
+		height: 655px;
+		/*background-image: url(assets/lr1.jpg);*/
+		background-repeat: no-repeat;
+		position: relative;
+		background-size: cover;
+		vertical-align: top;
+		margin-left: 1%;
+		text-align: center;
+	}
+
+	.roomImage0{
+		width: 10%;
+		left: 25%;
+		top: 655px;
+		position: absolute;
+		vertical-align: top;
+		margin: 0 auto;
+	}
+
+	.roomImage1{
+		width: 10%;
+		left: 35%;
+		top: 655px;
+		position: absolute;
+		vertical-align: top;
+		margin: 0 auto;
+	}
+
+	.roomImage2{
+		width: 10%;
+		left: 45%;
+		top: 655px;
+		position: absolute;
+		vertical-align: top;
+		margin: 0 auto;
+	}
+
+	.roomImage3{
+		width: 10%;
+		left: 55%;
+		top: 655px;
+		position: absolute;
+		vertical-align: top;
+		margin: 0 auto;
+	}
+
+	.roomImage4{
+		width: 10%;
+		left: 65%;
+		top: 655px;
+		position: absolute;
+		vertical-align: top;
+		margin: 0 auto;
+	}
+
+	.roomImage5{
+		width: 10%;
+		left: 75%;
+		top: 655px;
+		position: absolute;
+		vertical-align: top;
+		margin: 0 auto;
+	}
+
+	.imageOnly{
+		max-height: 100%;
+		max-width: 100%;;
+		right: 0px;
+	}
+
+	.title{
+		font-size: xx-large;
+		font-style: oblique;
+		font-weight: 900;
+	}
+
+	.mediaArtistMPN{
+		font-size: medium;
+		font-style: normal;
+		color: gray;
+	}
+
+	.priceHeader{
+		display: inline-block;
+		font-size: large;
+		font-style: normal;
+		font-weight: 600;
+		margin-top: 20px;
+		margin-left: 15px;
+		Width: 40%;
+	}
+
+	.Price{
+		display: inline-block;
+		margin-left: 15px;
+		width: 40%;
+	}
+
+	.sizeAndPrintType{
+		display: inline-block;
+		font-size: large;
+		font-style: normal;
+		font-weight: 600;
+		margin-top: 20px;
+		margin-right: 50px;
+		Width: 30.6%;
+	}
+}
+
+@media (max-width: 1650px){
+	.Room{
+		display: inline-block;
+		width: 750px;
+		height: 578px;
+		/*background-image: url(assets/lr1.jpg);*/
+		background-repeat: no-repeat;
+		position: relative;
+		background-size: cover;
+		vertical-align: top;
+		margin-left: 1%;
+		text-align: center;
+	}
+
+	.roomImage0{
+		width: 10%;
+		left: 25%;
+		top: 578px;
+		position: absolute;
+		vertical-align: top;
+		margin: 0 auto;
+	}
+
+	.roomImage1{
+		width: 10%;
+		left: 35%;
+		top: 578px;
+		position: absolute;
+		vertical-align: top;
+		margin: 0 auto;
+	}
+
+	.roomImage2{
+		width: 10%;
+		left: 45%;
+		top: 578px;
+		position: absolute;
+		vertical-align: top;
+		margin: 0 auto;
+	}
+
+	.roomImage3{
+		width: 10%;
+		left: 55%;
+		top: 578px;
+		position: absolute;
+		vertical-align: top;
+		margin: 0 auto;
+	}
+
+	.roomImage4{
+		width: 10%;
+		left: 65%;
+		top: 578px;
+		position: absolute;
+		vertical-align: top;
+		margin: 0 auto;
+	}
+
+	.roomImage5{
+		width: 10%;
+		left: 75%;
+		top: 578px;
+		position: absolute;
+		vertical-align: top;
+		margin: 0 auto;
+	}
+
+	.imageOnly{
+		max-height: 100%;
+		max-width: 100%;
+		right: 0px;
+	}
+
+	.title{
+		font-size: xx-large;
+		font-style: oblique;
+		font-weight: 900;
+	}
+
+	.mediaArtistMPN{
+		font-size: medium;
+		font-style: normal;
+		color: gray;
+	}
+
+	.priceHeader{
+		display: inline-block;
+		font-size: large;
+		font-style: normal;
+		font-weight: 600;
+		margin-top: 20px;
+		margin-left: 15px;
+		Width: 40%;
+	}
+
+	.Price{
+		display: inline-block;
+		margin-left: 15px;
+		width: 40%;
+	}
+
+	.sizeAndPrintType{
+		display: inline-block;
+		font-size: large;
+		font-style: normal;
+		font-weight: 600;
+		margin-top: 20px;
+		margin-right: 50px;
+		Width: 30.6%;
+	}
+}
+
+@media (max-width: 1450px){
+	.Room{
+		display: inline-block;
+		width: 600px;
+		height: 462.9px;
+		/*background-image: url(assets/lr1.jpg);*/
+		background-repeat: no-repeat;
+		position: relative;
+		background-size: cover;
+		vertical-align: top;
+		margin-left: 1%;
+		text-align: center;
+	}
+
+	.roomImage0{
+		width: 10%;
+		left: 25%;
+		top: 462.9px;
+		position: absolute;
+		vertical-align: top;
+		margin: 0 auto;
+	}
+
+	.roomImage1{
+		width: 10%;
+		left: 35%;
+		top: 462.9px;
+		position: absolute;
+		vertical-align: top;
+		margin: 0 auto;
+	}
+
+	.roomImage2{
+		width: 10%;
+		left: 45%;
+		top: 462.9px;
+		position: absolute;
+		vertical-align: top;
+		margin: 0 auto;
+	}
+
+	.roomImage3{
+		width: 10%;
+		left: 55%;
+		top: 462.9px;
+		position: absolute;
+		vertical-align: top;
+		margin: 0 auto;
+	}
+
+	.roomImage4{
+		width: 10%;
+		left: 65%;
+		top: 462.9px;
+		position: absolute;
+		vertical-align: top;
+		margin: 0 auto;
+	}
+
+	.roomImage5{
+		width: 10%;
+		left: 75%;
+		top: 462.9px;
+		position: absolute;
+		vertical-align: top;
+		margin: 0 auto;
+	}
+
+	.imageOnly{
+		max-height: 100%;
+		max-width: 100%;
+		right: 0px;
+	}
+
+	.title{
+		font-size: xx-large;
+		font-style: oblique;
+		font-weight: 900;
+	}
+
+	.mediaArtistMPN{
+		font-size: medium;
+		font-style: normal;
+		color: gray;
+	}
+
+	.priceHeader{
+		display: inline-block;
+		font-size: large;
+		font-style: normal;
+		font-weight: 600;
+		margin-top: 20px;
+		margin-left: 15px;
+		Width: 40%;
+	}
+
+	.Price{
+		display: inline-block;
+		margin-left: 15px;
+		width: 40%;
+	}
+
+	.sizeAndPrintType{
+		display: inline-block;
+		font-size: large;
+		font-style: normal;
+		font-weight: 600;
+		margin-top: 20px;
+		margin-right: 50px;
+		Width: 30.6%;
+	}
+}
+
+@media (max-width: 1350px){
+	.Room{
+		display: inline-block;
+		width: 480px;
+		height: 370.32px;
+		/*background-image: url(assets/lr1.jpg);*/
+		background-repeat: no-repeat;
+		position: relative;
+		background-size: cover;
+		vertical-align: top;
+		margin-left: 1%;
+		text-align: center;
+	}
+
+	.roomImage0{
+		width: 10%;
+		left: 25%;
+		top: 370.32px;
+		position: absolute;
+		vertical-align: top;
+		margin: 0 auto;
+	}
+
+	.roomImage1{
+		width: 10%;
+		left: 35%;
+		top: 370.32px;
+		position: absolute;
+		vertical-align: top;
+		margin: 0 auto;
+	}
+
+	.roomImage2{
+		width: 10%;
+		left: 45%;
+		top: 370.32px;
+		position: absolute;
+		vertical-align: top;
+		margin: 0 auto;
+	}
+
+	.roomImage3{
+		width: 10%;
+		left: 55%;
+		top: 370.32px;
+		position: absolute;
+		vertical-align: top;
+		margin: 0 auto;
+	}
+
+	.roomImage4{
+		width: 10%;
+		left: 65%;
+		top: 370.32px;
+		position: absolute;
+		vertical-align: top;
+		margin: 0 auto;
+	}
+
+	.roomImage5{
+		width: 10%;
+		left: 75%;
+		top: 370.32px;
+		position: absolute;
+		vertical-align: top;
+		margin: 0 auto;
+	}
+
+	.imageOnly{
+		max-height: 100%;
+		max-width: 100%;
+		right: 0px;
+	}
+
+	.title{
+		font-size: x-large;
+		font-style: oblique;
+		font-weight: 800;
+	}
+
+	.mediaArtistMPN{
+		font-size: small;
+		font-style: normal;
+		color: gray;
+	}
+
+	.priceHeader{
+		display: inline-block;
+		font-size: medium;
+		font-style: normal;
+		font-weight: 600;
+		margin-top: 20px;
+		margin-left: 15px;
+		Width: 40%;
+	}
+
+	.Price{
+		display: inline-block;
+		margin-left: 15px;
+		width: 40%;
+	}
+
+	.sizeAndPrintType{
+		display: inline-block;
+		font-size: medium;
+		font-style: normal;
+		font-weight: 600;
+		margin-top: 20px;
+		margin-right: 50px;
+		Width: 30.6%;
+	}
+}
+
+@media (max-width: 1075px){
+	.Room{
+		display: inline-block;
+		width: 384px;
+		height: 296.256px;
+		/*background-image: url(assets/lr1.jpg);*/
+		background-repeat: no-repeat;
+		position: relative;
+		background-size: cover;
+		vertical-align: top;
+		margin-left: 1%;
+		text-align: center;
+	}
+
+	.roomImage0{
+		width: 10%;
+		left: 25%;
+		top: 296.256px;
+		position: absolute;
+		vertical-align: top;
+		margin: 0 auto;
+	}
+
+	.roomImage1{
+		width: 10%;
+		left: 35%;
+		top: 296.256px;
+		position: absolute;
+		vertical-align: top;
+		margin: 0 auto;
+	}
+
+	.roomImage2{
+		width: 10%;
+		left: 45%;
+		top: 296.256px;
+		position: absolute;
+		vertical-align: top;
+		margin: 0 auto;
+	}
+
+	.roomImage3{
+		width: 10%;
+		left: 55%;
+		top: 296.256px;
+		position: absolute;
+		vertical-align: top;
+		margin: 0 auto;
+	}
+
+	.roomImage4{
+		width: 10%;
+		left: 65%;
+		top: 296.256px;
+		position: absolute;
+		vertical-align: top;
+		margin: 0 auto;
+	}
+
+	.roomImage5{
+		width: 10%;
+		left: 75%;
+		top: 296.256px;
+		position: absolute;
+		vertical-align: top;
+		margin: 0 auto;
+	}
+
+	.imageOnly{
+		max-height: 100%;
+		max-width: 100%;
+		right: 0px;
+	}
+
+	.title{
+		font-size: large;
+		font-style: oblique;
+		font-weight: 700;
+	}
+
+	.mediaArtistMPN{
+		font-size: x-small;
+		font-style: normal;
+		color: gray;
+	}
+
+	.priceHeader{
+		display: inline-block;
+		font-size: small;
+		font-style: normal;
+		font-weight: 600;
+		margin-top: 20px;
+		margin-left: 15px;
+		Width: 40%;
+	}
+
+	.Price{
+		display: inline-block;
+		margin-left: 15px;
+		width: 40%;
+	}
+
+	.sizeAndPrintType{
+		display: inline-block;
+		font-size: small;
+		font-style: normal;
+		font-weight: 600;
+		margin-top: 20px;
+		margin-right: 50px;
+		Width: 30.6%;
+	}
+}
+
+
+@media (max-width: 870px){
+	.Room{
+		display: inline-block;
+		width: 307.2px;
+		height: 237px;
+		/*background-image: url(assets/lr1.jpg);*/
+		background-repeat: no-repeat;
+		position: relative;
+		background-size: cover;
+		vertical-align: top;
+		margin-left: 1%;
+		text-align: center;
+	}
+
+	.roomImage0{
+		width: 10%;
+		left: 25%;
+		top: 237px;
+		position: absolute;
+		vertical-align: top;
+		margin: 0 auto;
+	}
+
+	.roomImage1{
+		width: 10%;
+		left: 35%;
+		top: 237px;
+		position: absolute;
+		vertical-align: top;
+		margin: 0 auto;
+	}
+
+	.roomImage2{
+		width: 10%;
+		left: 45%;
+		top: 237px;
+		position: absolute;
+		vertical-align: top;
+		margin: 0 auto;
+	}
+
+	.roomImage3{
+		width: 10%;
+		left: 55%;
+		top: 237px;
+		position: absolute;
+		vertical-align: top;
+		margin: 0 auto;
+	}
+
+	.roomImage4{
+		width: 10%;
+		left: 65%;
+		top: 237px;
+		position: absolute;
+		vertical-align: top;
+		margin: 0 auto;
+	}
+
+	.roomImage5{
+		width: 10%;
+		left: 75%;
+		top: 237px;
+		position: absolute;
+		vertical-align: top;
+		margin: 0 auto;
+	}
+
+	.imageOnly{
+		max-height: 100%;
+		max-width: 100%;
+		right: 0px;
+	}
+
+	.title{
+		font-size: medium;
+		font-style: oblique;
+		font-weight: 600;
+	}
+
+	.mediaArtistMPN{
+		font-size: xx-small;
+		font-style: normal;
+		color: gray;
+	}
+
+	.priceHeader{
+		display: inline-block;
+		font-size: x-small;
+		font-style: normal;
+		font-weight: 600;
+		margin-top: 20px;
+		margin-left: 15px;
+		Width: 40%;
+	}
+
+	.Price{
+		display: inline-block;
+		margin-left: 15px;
+		width: 40%;
+	}
+
+	.sizeAndPrintType{
+		display: inline-block;
+		font-size: x-small;
+		font-style: normal;
+		font-weight: 600;
+		margin-top: 20px;
+		margin-right: 50px;
+		Width: 30.6%;
+	}
+}
+
+
+.addToCart{
+	display: inline-block;
+	vertical-align: top;
+	margin-Left: 0px;
+	width: 38%;
+	position: relative;
+}
+
+#variantSizes{
+	width: 30.6%;
+}
+
+.rooms{
+	display: flex;
+}
+
+
+
+

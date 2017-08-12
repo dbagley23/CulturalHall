@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cultural Hall - Vintage Temples</title>
+  	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body ng-app="vintageTemples" ng-controller="mainCtrl" >
+<div id="Wrapper">
+	<div class="main">
+		<div class="header">
+			<a href="VintageTemples.html"><img class="logo" src="images/assets/reparteelogo.png" alt="" width="200" height="45"/></a>
+			<a class="header-link" href="mailto: sales@reparteegallery.com">sales@reparteegallery.com<br/>(801)763-7956</a
+			><span class="header-link a" >380 E 620 S<br/>American Fork, UT  84003</span>
+		</div>
+		<div class="menu-bar">
+			<a class="menu-link" href="VintageTemples.html">Home</a>
+			<!--<a class="menu-link" href="Rm.html">About Us</a>
+			<a class="menu-link" href="Rm.html">Profiles</a>
+			<a class="menu-link" href="Rm.html">Pricing</a>-->
+			<fieldset class = "SrchBox">
+				<label>Search:</label>
+				<input type="text" size="15" ng-model="SearchTerm" id="searchBox" placeholder="Temple Name"  onfocus="javascript:this.style.background='#ffffff';" onblur="javascript:this.style.background='#dddddd';" />
+				<!--<input type="button" ng-click="getFrameData()" title="Click Go to Submit" id="Go" class="submit" value="Go" />-->
+			</fieldset>
+		</div>
+	<div class="main-body">
+			<!--<div ng-show='showLargeImg' class="left-column mycolumns">
+				<img  ng-click="showLarge()" id="mimage" src="{{largeImg}}" alt=""/>
+			</div>
+			<div ng-show='showLargeImg' class="right-column mycolumns"><h1>Moulding Specifications</h1>
+				<p id="mouldingID">Frame ID:  {{mouldingID}}</P>
+				<p id="mouldingDescription">Description:  {{mouldingDescription}}</P>
+				<p id="mouldingFinish">Finish:  {{mouldingFinish}}</P>
+				<p id="mouldingPrice">Price:  {{retailPrice}}</P>
+			</div>-->
+		<ul>
+			<li class="TempleView" ng-repeat="temple in temples | filter:SearchTerm">
+				<div  class="TempleImage"><img  style="width: 195%;" id="frameImage" src="{{temple.img}}" title="{{temple.name}}"></img></div>
+				<div class="TempleSpecs">
+					<div class="Name">{{temple.name}}</div>
+				</div>
+			</li>
+		</ul>
+		</div>
+	</div>
+</div>
+    <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.5.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular.js"></script>
+	<script src="../../js/app.js"></script>
+	<script src="../../js/mainCtrl.js"></script>
+    <script src="js/parseService.js"></script>
+</body>
+

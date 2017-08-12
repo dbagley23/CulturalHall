@@ -1,0 +1,57 @@
+<div ng-controller="homePageCtrl">
+    <div id="Wrapper">
+        <div>
+            <div class="menu-bar">
+                <fieldset class = "SrchBox">
+                    <label class="searchLabel">Search:</label>
+                    <input type="text" size="15" ng-model="SearchTerm" id="searchBox" placeholder="Temple Name"  onfocus="javascript:this.style.background='#ffffff';" onblur="javascript:this.style.background='#dddddd';" />
+                    <!--<input type="button" ng-click="getFrameData()" title="Click Go to Submit" id="Go" class="submit" value="Go" />-->
+                </fieldset>
+            </div>
+            <div class="main-body">
+                <div id="templeList" >
+                    <ul>
+                        <li class="templeView" ng-repeat="temple in templesMeta | filter:SearchTerm | filter: {isDefault: '1'}">
+                            <div ng-click="showOnWall(temple, 'CHTempleVariants')" class="Image"><img  id="templeImage" src="{{temple.Image}}" title="{{temple.Name}}"/></div>
+                            <div class="templeName">
+                                {{temple.Name}}
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+                <div Class="Room" back-img="{{roomImage}}">
+                    <!--<img class="roomImage" src="{{roomImage}}"/>-->
+                    <span ng-show='movable'  data-drag="true" jqyoui-draggable><img ng-show='movable' style="{{myStyle}}" id="wallImage" src="{{wallImg}}" /></span>
+                    <img ng-show='lonelyImage' class="imageOnly" src="{{wallImg}}" />
+                    <img ng-click="showImageOnly('wallImg')" class="roomImage0" src="{{wallImg}}"/>
+                    <img ng-click="showRoom('assets/br2.jpg', selectedVariant.attributes, 'CHHomeDecorVariants')" class="roomImage1" src="assets/br2.jpg"/>
+                    <img ng-click="showRoom('assets/BR1.jpg', selectedVariant.attributes, 'CHHomeDecorVariants')" class="roomImage2" src="assets/BR1.jpg"/>
+                    <img ng-click="showRoom('assets/lr1.jpg', selectedVariant.attributes, 'CHHomeDecorVariants')" class="roomImage3" src="assets/lr1.jpg"/>
+                    <img ng-click="showRoom('assets/lr2.jpg', selectedVariant.attributes, 'CHHomeDecorVariants')" class="roomImage4" src="assets/lr2.jpg"/>
+                    <img ng-click="showRoom('assets/lr3.jpg', selectedVariant.attributes, 'CHHomeDecorVariants')" class="roomImage5" src="assets/lr3.jpg"/>
+
+                </div>
+                <div class="addToCart">
+                    <div class="title">{{title}}</div>
+                    <div class="mediaArtistMPN">{{Medium}} | by {{Artist}} | Item #: {{itemNumber}}</div>
+                    <div  class="sizeAndPrintType">Size and Media</div><div class="priceHeader">Price</div>
+                    <select ng-model="selectedVariant" ng-options='item.attributes.Dimensions group by item.Medium for item in variants' id="variantSizes" style="width: 40%;"  ng-change="getSize(selectedVariant.attributes, 'CHTempleVariants')">
+                    </select>
+                    <!--<select ng-model="selectedVariant" ng-options="variant.medium for varoamt in variants" style="width: 40%;" ng-change="getFrame(selectedVariant)">-->
+                    <!--</select>-->
+                    <div class="Price">{{Price}}</div>
+                    <div  class="sizeAndPrintType">Select a Frame</div><div class="priceHeader">Frame ID</div>
+                    <!--<select ng-init="selectedFrame[2]" ng-model="selectedFrame" id="frameSizes" style="width: 40%;" ng-change="getSize(selectedFrame)">-->
+                        <!--<option value=�0?>[Select a Frame]</option>-->
+                        <!--<option data-ng-repeat='frame in frames' value="{{frame.attributes}}">{{frame.attributes.Frames}}</option>-->
+                    <!--</select>-->
+                    <select ng-model="selectedFrame" ng-options="frame.FrameDescription for frame in frames" style="width: 40%;" ng-change="getFrame(selectedFrame, 'chTempleVariants')">
+                     </select>
+                    <div class="Price">{{chosenFrame}}</div>
+                    <div class="sizeAndPrintType">Size Framed:  </div><div class="Price">{{framedDimension}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
